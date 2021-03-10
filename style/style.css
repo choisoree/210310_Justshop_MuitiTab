@@ -68,9 +68,11 @@ div#logo {
 nav#gnb {
     width: 900px;
     padding-top: 26px;
+
+    z-index: 100;
 }
 #gnb>ul {
-    width: 564px;
+    width: 563px;
     border: 1px solid #bbb;
     margin-left: 330px;
 }
@@ -82,21 +84,33 @@ nav#gnb {
 #gnb>ul>li {
     float: left;
 }
-#gnb>ul>li>a {
+
+#gnb ul li a {
     width: 140px;
-    font-size: 19px;
-    font-weight: bold;
+
     text-align: center;
     padding: 6px 16px;
     /*border: 1px solid #000; */
     display: inline-block;
 }
-#gnb>ul>li>a:hover {
+
+#gnb>ul>li>a {
+    font-weight: bold;
+    font-size: 19px;
+}
+#gnb ul>li>a:hover {
     background-color: #c8e9fd;
 }
+
+#gnb ul.submenu {
+    width: 139px;
+
+    border: 1px solid #bbb;
+    border-top: none;
+
+    display: none;
+}
     /* nav#gnb 끝 */
-
-
 /* header#header 끝 */
 
 

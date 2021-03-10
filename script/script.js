@@ -47,4 +47,19 @@ $(function () {
         });
     });
 
+    $("#gnb>ul#mainmenu>li").mouseover(function(){
+        $(this).children("ul").stop().slideDown(1000);
+
+//               $(this).children("ul").css({
+//                   "border":"1px solid #bbb",
+//                   "border-top":"none"
+//               });
+    });
+
+     $("#gnb>ul#mainmenu>li").mouseout(function(){
+        $(this).children("ul").stop().slideUp(400);
+
+    });
+
+
 });
