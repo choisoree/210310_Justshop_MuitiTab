@@ -72,25 +72,26 @@ nav#gnb {
     z-index: 100;
 }
 #gnb>ul {
-    width: 563px;
+    width: 564px;
     border: 1px solid #bbb;
     margin-left: 330px;
 }
 #gnb>ul::after {
     content: "";
+    height: 48px;
     display: block;
-    height: 38px;
 }
+
 #gnb>ul>li {
     float: left;
+    text-align: center;
 }
 
 #gnb ul li a {
     width: 140px;
-
     text-align: center;
-    padding: 6px 16px;
-    /*border: 1px solid #000; */
+    padding: 10px 15px;
+/*    border: 1px solid #000; */
     display: inline-block;
 }
 
@@ -103,11 +104,6 @@ nav#gnb {
 }
 
 #gnb ul.submenu {
-    width: 139px;
-
-    border: 1px solid #bbb;
-    border-top: none;
-
     display: none;
 }
     /* nav#gnb 끝 */
@@ -118,11 +114,29 @@ nav#gnb {
 
     /* div#slideshow 시작 */
 div#slideshow {
+    width: 1200px;
     height: 300px;
-    overflow: hidden;
+    border: 1px solid #000;
 
+    overflow: hidden;
     position: relative;
 }
+div#slideFrame {
+    width: 3700px;
+    border: 1px solid #000;
+}
+
+
+div#slideFrame::after {
+    content: "";
+    height: 300px;
+    display: inline-block;
+}
+
+div#slideFrame>a {
+    float: left;
+}
+
 
 #slideshow div#promotionTxt {
     width: 320px;
@@ -139,8 +153,8 @@ div#slideshow {
     left: 50%;
     top: 50%;
 
-    transform: translate(-50%, -82%);
-
+    transform: translate(-50%, -92%);
+/*    z-index: 1;*/
 }
     /* div#slideshow 끝 */
 

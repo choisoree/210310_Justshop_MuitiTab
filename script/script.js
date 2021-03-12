@@ -1,5 +1,39 @@
 $(function () {
 
+    setInterval (fuslide, 3000);
+
+    function fuslide() {
+
+        $("#slideFrame").animate({"margin-left":"-1200px"},
+        2000,
+        function(){
+
+            $("#slideFrame>a:first-child").insertAfter("#slideFrame>a:last-child");
+
+            $("#slideFrame").css({"margin-left":"0"});
+
+
+        });
+    }
+
+
+
+    $("#gnb>ul#mainmenu>li").mouseover(function(){
+        $(this).children("ul").stop().slideDown(1000);
+
+//               $(this).children("ul").css({
+//                   "border":"1px solid #bbb",
+//                   "border-top":"none"
+//               });
+    });
+
+     $("#gnb>ul#mainmenu>li").mouseout(function(){
+        $(this).children("ul").stop().slideUp(500);
+
+    });
+
+
+
     $("button#tabBtn1").click(function () {
 
         //       버튼모양 변경 시작
@@ -47,19 +81,6 @@ $(function () {
         });
     });
 
-    $("#gnb>ul#mainmenu>li").mouseover(function(){
-        $(this).children("ul").stop().slideDown(1000);
-
-//               $(this).children("ul").css({
-//                   "border":"1px solid #bbb",
-//                   "border-top":"none"
-//               });
-    });
-
-     $("#gnb>ul#mainmenu>li").mouseout(function(){
-        $(this).children("ul").stop().slideUp(400);
-
-    });
 
 
 });
