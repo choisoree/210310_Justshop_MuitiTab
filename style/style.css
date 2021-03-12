@@ -116,14 +116,14 @@ nav#gnb {
 div#slideshow {
     width: 1200px;
     height: 300px;
-    border: 1px solid #000;
+/*    border: 1px solid #000;*/
 
     overflow: hidden;
-    position: relative;
+
 }
 div#slideFrame {
     width: 3700px;
-    border: 1px solid #000;
+/*    border: 1px solid #000;*/
 }
 
 
@@ -134,15 +134,16 @@ div#slideFrame::after {
 }
 
 div#slideFrame>a {
+    position: relative;
     float: left;
 }
 
 
-#slideshow div#promotionTxt {
+#slideshow a span {
     width: 320px;
     font-size: 20px;
     font-weight: bold;
-    line-height: 2em;
+    line-height: 32px;
     text-align: center;
     padding: 8px;
     border-radius: 20px;
@@ -153,7 +154,7 @@ div#slideFrame>a {
     left: 50%;
     top: 50%;
 
-    transform: translate(-50%, -92%);
+    transform: translate(-50%, -182%);
 /*    z-index: 1;*/
 }
     /* div#slideshow 끝 */
