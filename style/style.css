@@ -231,7 +231,44 @@ div#bbs img {
     /*갤러리 bbs 시작*/
 /*멀티탭 bbs 끝*/
 
+#layerBG {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: rgba(255, 255, 255, 0.0);
 
+    display: none;
+    z-index: 100;
+}
+
+#layerBG #layerPopup {
+    width: 500px;
+    height: 400px;
+    padding: 20px;
+    border: 1px solid #000;
+    border-radius: 20px;
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+
+    transform: translate(-50%,-50%);
+}
+
+#layerBG #layerPopup button {
+    font-size: 20px;
+    font-weight: bold;
+    padding: 4px 14px;
+    background-color: #ccc;
+
+    cursor: pointer;
+    position: absolute;
+    right: 30px;
+    bottom: 30px;
+
+}
 #aside>div#banner,
 #aside>div#shortcut {
     width: 375px;

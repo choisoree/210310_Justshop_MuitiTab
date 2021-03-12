@@ -19,7 +19,7 @@ $(function () {
 
 
     $("#gnb>ul#mainmenu>li").mouseover(function(){
-        $(this).children("ul").stop().slideDown(1000);
+        $(".submenu").stop().slideDown(1000);
 
 //               $(this).children("ul").css({
 //                   "border":"1px solid #bbb",
@@ -28,7 +28,7 @@ $(function () {
     });
 
      $("#gnb>ul#mainmenu>li").mouseout(function(){
-        $(this).children("ul").stop().slideUp(500);
+        $(".submenu").stop().slideUp(500);
 
     });
 
@@ -81,6 +81,13 @@ $(function () {
         });
     });
 
-
+///////////////레이어 팝업 시작//////////////
+    $("a.modalpoint").click(function(){
+        $("#layerBG").css({"display":"block"});
+    });
+    $("#closeBtn").click(function(){
+        $("#layerBG").css({"display":"none"});
+    });
+///////////////레이어 팝업 끝//////////////
 
 });
